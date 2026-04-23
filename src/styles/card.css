@@ -1,0 +1,92 @@
+/* Netflix-style dark item card */
+.item-card {
+  background: #141414;
+  border-radius: 14px;
+  width: 220px;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  border: 1px solid #2a2a2a;
+}
+
+.item-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.8);
+}
+
+/* top colored band */
+.card-band {
+  height: 6px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+/* category badge */
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.card-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 900;
+  color: #e5e5e5;
+  margin: 0 0 8px 0;
+}
+
+.card-meta {
+  font-size: 11px;
+  color: #666;
+  margin: 0 0 14px 0;
+}
+
+/* status row */
+.card-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #1e1e1e;
+}
+
+/* buttons */
+.card-btn {
+  width: 100%;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: opacity 0.15s;
+}
+
+.card-btn:hover { opacity: 0.85; }
+
+.card-btn.reserve  { background: #e50914; color: white; }
+.card-btn.buy      { background: #22c55e; color: white; }
+.card-btn.remove   { background: #1e1e1e; color: #888;  border: 1px solid #333; }

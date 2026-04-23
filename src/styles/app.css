@@ -1,0 +1,36 @@
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background: #1e293b;
+}
+
+.filters button:hover {
+  background: var(--accent);
+}
+
+.grid {
+  display: grid;
+  gap: 15px;
+}

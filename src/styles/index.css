@@ -1,0 +1,31 @@
+
+/* =========================
+   IMPORT ALL CSS FILES
+========================= */
+
+@import "./global.css";
+@import "./layout.css";
+@import "./login.css";
+@import "./dashboard.css";
+@import "./card.css";
+@import "./additem.css";
+
+/* =========================
+   EXTRA GLOBAL HELPERS
+========================= */
+
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.section {
+  margin-top: 20px;
+}
+

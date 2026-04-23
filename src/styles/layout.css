@@ -1,0 +1,71 @@
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: var(--card);
+  padding: 20px;
+  border-right: 1px solid var(--border);
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.sidebar button:hover {
+  background: var(--border);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  padding: 15px 25px;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+
+.page {
+  padding: 25px;
+}
+
+/* 🔥 SQUARE GRID */
+.square-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* 🎬 NETFLIX STYLE CARD */
+.square-card {
+  aspect-ratio: 1 / 1;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.25s;
+  text-align: center;
+}
+
+.square-card:hover {
+  transform: scale(1.08);
+}
+
+.add-card {
+  border: 2px dashed var(--accent);
+}

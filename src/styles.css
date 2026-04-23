@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header input {
+  padding: 8px;
+  margin-left: 10px;
+}
+
+.add-box {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.add-box input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card.needed {
+  background: #1e293b;
+}
+
+.card.locked {
+  background: #78350f;
+}
+
+.card.bought {
+  background: #14532d;
+}

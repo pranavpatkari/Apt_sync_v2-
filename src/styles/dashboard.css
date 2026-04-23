@@ -1,0 +1,62 @@
+.dashboard {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* CARDS */
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-card h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+/* COLORS */
+.stat-card.needed {
+  border-left: 4px solid #3b82f6;
+}
+
+.stat-card.locked {
+  border-left: 4px solid #f59e0b;
+}
+
+.stat-card.bought {
+  border-left: 4px solid #22c55e;
+}
+
+.stat-card.total {
+  border-left: 4px solid #a855f7;
+}
+
+/* EMPTY */
+.empty-box {
+  margin-top: 40px;
+  text-align: center;
+  padding: 30px;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--muted);
+}

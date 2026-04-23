@@ -1,0 +1,250 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f8fafc;
+
+  --card: #ffffff;
+  --card-hover: #f1f5f9;
+
+  --text: #0f172a;
+  --muted: #475569;
+
+  --border: #e2e8f0;
+
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --radius: 12px;
+}
+
+/* DARK MODE */
+
+[data-theme="dark"] {
+  --bg: #020617;
+  --bg-secondary: #020617;
+
+  --card: #121a2b;
+  --card-hover: #1e293b;
+
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+
+  --border: #1e293b;
+
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* =========================
+   BASE
+========================= */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.5;
+  transition: 0.25s ease;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+button.secondary {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+button.secondary:hover {
+  background: var(--card-hover);
+}
+
+button.danger {
+  background: var(--danger);
+}
+
+button.success {
+  background: var(--success);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: var(--radius);
+  color: var(--text);
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: var(--accent);
+}
+
+/* =========================
+   CARD SYSTEM
+========================= */
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: var(--radius);
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+
+.grid {
+  display: grid;
+  gap: 15px;
+}
+
+/* =========================
+   FLEX UTILITIES
+========================= */
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   SPACING UTILITIES
+========================= */
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+
+/* =========================
+   SIDEBAR / LAYOUT HELPERS
+========================= */
+
+.sidebar {
+  background: var(--card);
+  border-right: 1px solid var(--border);
+}
+
+.topbar {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* =========================
+   SCROLLBAR (nice touch)
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
